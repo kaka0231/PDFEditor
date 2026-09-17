@@ -132,6 +132,15 @@ npm run start
 
 ---
 
+## 🌐 GitHub Pages Deployment
+
+This project includes automated continuous deployment to GitHub Pages via GitHub Actions:
+- **Live Application**: [https://kaka0231.github.io/PDFEditor/](https://kaka0231.github.io/PDFEditor/)
+- **Workflow**: Automated build and deployment defined in `.github/workflows/deploy-pages.yml` (triggered on pushes to `main`).
+- **Setup**: In your repository **Settings** > **Pages**, set **Source** to **GitHub Actions**.
+
+---
+
 ## 📄 License
 
 MIT License. Free for personal and commercial use.
