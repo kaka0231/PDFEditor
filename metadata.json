@@ -1,0 +1,6 @@
+{
+  "name": "PDFEditor",
+  "description": "全方位文件處理工具：PDF轉Word、Word轉PDF、PDF在線編輯標註、電子簽名及相片批量轉PDF。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
