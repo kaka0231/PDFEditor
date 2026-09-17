@@ -97,7 +97,7 @@ PDFEditor runs **100% client-side** in your browser for document processing — 
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/PDFEditor.git
+   git clone https://github.com/kaka0231/PDFEditor.git
    cd PDFEditor
    ```
 
