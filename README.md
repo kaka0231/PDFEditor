@@ -132,46 +132,6 @@ npm run start
 
 ---
 
-## 🐳 Docker & Cloud Deployment
-
-### Dockerfile
-```dockerfile
-FROM node:22-slim
-
-WORKDIR /app
-
-COPY package*.json ./
-RUN npm install --legacy-peer-deps
-
-COPY . .
-RUN npm run build
-
-ENV PORT=3000
-ENV NODE_ENV=production
-EXPOSE 3000
-
-CMD ["npm", "run", "start"]
-```
-
-### Deploying to Google Cloud Run
-1. Build and push the container image:
-   ```bash
-   gcloud builds submit --tag gcr.io/YOUR_PROJECT_ID/pdfeditor
-   ```
-
-2. Deploy the service:
-   ```bash
-   gcloud run deploy pdfeditor \
-     --image gcr.io/YOUR_PROJECT_ID/pdfeditor \
-     --platform managed \
-     --region asia-northeast1 \
-     --allow-unauthenticated \
-     --port 3000 \
-     --set-env-vars="NODE_ENV=production"
-   ```
-
----
-
 ## 📄 License
 
 MIT License. Free for personal and commercial use.
